@@ -1,0 +1,73 @@
+@use "utilities/colours";
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+}
+
+header .logo {
+  margin: 20px;
+  height: 70px;
+}
+
+header .main {
+  margin: 20px 20px 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .menu-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 3px 0;
+  width: 32px;
+  height: 25px;
+  cursor: pointer;
+}
+
+header .menu-button:hover {
+  border: 3px solid colours.$brand-colour;
+}
+
+header .menu-button:hover div {
+  background-color: colours.$brand-colour;
+}
+
+header .menu-button div {
+  height: 3px;
+  width: 22px;
+  border-radius: 2px;
+  background-color: white;
+}
+
+header .vert-line {
+  width: 3px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: white;
+  margin-right: 10px;
+}
+
+header i {
+  font-size: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+header i:hover {
+  color: colours.$brand-colour;
+}
+
+header .fa-search {
+  font-size: 25px;
+}

@@ -12,20 +12,59 @@
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/c8712841cc.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
   <body>
-    <header>
-
+    <header class="white-text">
+      <img class="logo" id="logo" src="img/melchester-logo.png" alt="Visit Melchester Logo">
+      <div class="main">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <div class="vert-line"></div>
+        <i class="fas fa-search"></i>
+        <div class="menu-button"><div></div><div></div><div></div></div>
+      </div>
     </header>
 
-    <section class="landing-zone text-lz">
-      <h1>Welcome to Visit Melchester</h1>
-      <p>Suspendisse potenti. Mauris vitae tortor augue. Proin porttitor in ex sit amet efficitur. Donec pulvinar mi vel massa egestas, quis lacinia massa interdum.</p>
-    </section>
+    <main>
+      <section id="landing-zone" class="white-text">
+        <div class="overlay">
+          <div class="content-container">
+            <h3 id="welcome"></h3>
+            <div class="melchester">
+              <h1 id="non-brand-colour"></h1>
+              <h1 id="brand-colour"></h1>
+            </div>
+            <p id="subtitle"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="main-content" class="black-text">
+        <h2 id="section-1-title"></h2>
+        <p id="section-1-text"></p>
+        <img alt="rock on beach" id="section-1-img">
+        <h3 id="section-1-quote"></h3>
+        <h6 id="section-1-quote-author"></h6>
+      </section>
+    </main>
 
     <footer>
 
     </footer>
   </body>
+
+  <!-- Axios -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/axios.js"></script>
+
+  <!-- Pages -->
+  <script src="js/homepage.js"></script>
+
 </html>

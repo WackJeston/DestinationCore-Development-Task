@@ -1,7 +1,208 @@
-.landing-zone {
-  background-image: url("..img/landing-zone.jpg");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.white-text, .white-text a {
+  color: white;
+}
+
+.white-text p,
+.white-text h1,
+.white-text h2,
+.white-text h3,
+.white-text h4,
+.white-text h5,
+.white-text h6 {
+  margin: 0;
+}
+
+.white-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.white-text h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.white-text p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 100%;
+}
+
+header .logo {
+  margin: 20px;
+  height: 70px;
+}
+
+header .main {
+  margin: 20px 20px 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .menu-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 3px 0;
+  width: 32px;
+  height: 25px;
+  cursor: pointer;
+}
+
+header .menu-button:hover {
+  border: 3px solid #ff013c;
+}
+
+header .menu-button:hover div {
+  background-color: #ff013c;
+}
+
+header .menu-button div {
+  height: 3px;
+  width: 22px;
+  border-radius: 2px;
+  background-color: white;
+}
+
+header .vert-line {
+  width: 3px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: white;
+  margin-right: 10px;
+}
+
+header i {
+  font-size: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+header i:hover {
+  color: #ff013c;
+}
+
+header .fa-search {
+  font-size: 25px;
+}
+
+#landing-zone {
   background-size: cover;
   background-position: center;
-  height: 200px;
-  width: 200px;
+  height: 100vh;
+  min-height: 500px;
+  width: 100%;
+}
+
+#landing-zone .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#landing-zone .content-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: flex-start;
+  width: 90%;
+  top: 15%;
+}
+
+#landing-zone .melchester {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#landing-zone #brand-colour {
+  color: #ff013c;
+  margin-left: 20px;
+}
+
+#landing-zone .content-container p {
+  max-width: 500px;
+}
+
+#main-content {
+  margin: 20px;
+}
+
+#main-content img {
+  width: 100%;
+}
+
+#main-content h3 {
+  margin-bottom: 10px;
+}
+
+#main-content h6 {
+  margin-top: 0;
 }

@@ -1,9 +1,41 @@
+@use "utilities/colours";
 
-
-.landing-zone {
-  background-image: url("..img/landing-zone.jpg");
+#landing-zone {
   background-size: cover;
   background-position: center;
-  height: 200px;
-  width: 200px;
+  height: 100vh;
+  min-height: 500px;
+  width: 100%;
+}
+
+#landing-zone .overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: colours.$black-clear;
+}
+
+#landing-zone .content-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: flex-start;
+  width: 90%;
+  top: 15%;
+}
+
+#landing-zone .melchester {
+  display: flex;
+}
+
+#landing-zone #brand-colour {
+  color: colours.$brand-colour;
+  margin-left: 20px;
+}
+
+#landing-zone .content-container p {
+  max-width: 500px;
 }
